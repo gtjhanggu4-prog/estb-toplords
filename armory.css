@@ -1,0 +1,37 @@
+#panel{box-sizing:border-box;width:min(620px,96vw);max-width:96vw;max-height:92dvh;overflow:auto;padding:0;color:#f4eddd;border:1px solid #af8952;border-radius:18px;background:linear-gradient(145deg,#25313b,#101b22 60%);box-shadow:0 24px 80px #0009;color-scheme:dark}
+#panel::backdrop{background:#071015c9}
+#panel .sheet{padding:18px;display:grid;gap:14px}
+#panel .banner{position:relative;display:flex;align-items:center;gap:16px;padding:18px;padding-inline-end:44px;border-bottom:2px solid #bd965c;background:repeating-linear-gradient(120deg,transparent 0 18px,#eacc8209 19px 20px),radial-gradient(ellipse at 0% 100%,#605139,#243746 75%);border-radius:17px 17px 0 0}
+#panel .portrait{width:78px;height:90px;object-fit:cover;border:2px solid #ddbe81;border-radius:12px;box-shadow:0 0 0 3px #19242d;display:grid;place-items:center;font-size:44px}
+#panel .banner h2{color:#fff1c7;margin:4px 0;font:700 clamp(22px,5vw,34px)/1.2 Georgia,serif}
+#panel .exit{position:absolute;inset-inline-end:6px;top:6px;background:transparent;border:0;color:#f3e9ce;font-size:24px}
+#panel button,#panel select,#panel input{min-height:42px}
+#panel fieldset,#panel .skillcard,#panel .equipment{border:1px solid #53606a;border-radius:10px;padding:12px;background:#17242d;margin:0;min-width:0}
+#panel legend,#panel h3{font-size:16px;color:#efd198;font-weight:750;margin:0}
+#panel small,#panel summary span{color:#c5d0d4}
+#panel .levelbar{display:grid;grid-template-columns:42px minmax(40px,1fr) 65px 42px;align-items:center;gap:6px}
+#panel input,#panel select{box-sizing:border-box;min-width:0;max-width:100%;color:#fff4d8;background:#111d26;border:1px solid #52616a;border-radius:6px;text-align:center}
+#panel input[type=range]{width:100%;padding:0;accent-color:#e6b65c;background:transparent;border:0}
+#panel .levelbar button,#panel .tiers button{border:1px solid #836d49;color:#f4dfaf;background:#344049;border-radius:6px}
+#panel .loadout,#panel .tiers{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;margin:10px 0}
+#panel .item{position:relative;display:grid;gap:3px;justify-items:center;align-content:center;min-height:84px;background:linear-gradient(145deg,#354048,#1b242d);color:#ecf1ed;border:1px solid var(--rim);border-bottom:3px solid var(--rim);border-radius:8px;padding:4px;overflow-wrap:anywhere;font-size:13px}
+#panel .item strong{font-size:25px;color:var(--rim)}#panel .item[aria-pressed=true],#panel .tiers [aria-pressed=true]{outline:2px solid #ffde8b;outline-offset:-2px;background-color:#544834}
+#panel .skillcard{margin-top:7px}#panel summary{cursor:pointer;min-height:44px;align-content:center}#panel summary b{color:#ffe6ad}#panel summary span{font-size:13px}
+#panel fieldset label{display:flex;justify-content:space-between;align-items:center;gap:8px;color:#eee}#panel fieldset label input{width:46%}#panel .sheet p{font-size:14px;color:#ced8db}#panel .stars{color:#e9be62;letter-spacing:2px}
+#panel .forge{--metal:#edc779;--wash:#413726;margin-top:12px;background:#142028;border-radius:12px;border:1px solid #46515a;padding:12px}
+#panel .forge.ruby{--metal:#ff9796;--wash:#482d34}
+#panel .forgeTabs{display:flex;gap:4px;padding:4px;background:#0e171e;border-radius:10px}
+#panel .forgeTabs button{flex:1;min-width:0;border:1px solid transparent;background:transparent;color:#bcc6cb;border-radius:7px;font-size:14px}
+#panel .forgeTabs [aria-pressed=true]{background:var(--wash);color:var(--metal);border-color:var(--metal)}
+#panel .forgeHead,#panel .forgeTrack,#panel .forge label{display:flex;justify-content:space-between;align-items:center;gap:8px}
+#panel .forgeHead{margin:16px 0 6px}#panel .forgeHead strong{font-size:24px;color:var(--metal);font-variant-numeric:tabular-nums}
+#panel .forgeTrack{color:#afbac0;padding:0 4px;font-size:13px}#panel .ruby .forgeTrack{font-size:21px}#panel .forgeTrack .lit{color:var(--metal)}
+#panel .forgeControls{display:grid;grid-template-columns:42px 1fr 42px;align-items:center;gap:8px}#panel .forgeControls input{accent-color:var(--metal)}
+#panel .forgeControls button{border:1px solid #596369;background:transparent;color:var(--metal);border-radius:8px;font-size:20px}#panel .forgeControls :disabled{opacity:.4}
+#panel .forge details{margin-top:8px;border-top:1px solid #43515b}#panel .forge summary{color:#e3e9e9}#panel .forge label input{width:48%}
+#panel .forge.normal{--metal:#b7d6e2;--wash:#263d49}
+#panel .gems{justify-content:center;gap:8px;color:#53616a;font-size:24px}
+#panel .gems .lit{color:var(--metal)}
+#panel .pips{display:flex;gap:3px;margin:4px 0 8px}
+#panel .pips i{flex:1;height:5px;background:#394852;border-radius:2px}
+#panel .pips .on{background:var(--metal)}

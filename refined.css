@@ -1,0 +1,32 @@
+:root{--ink:#20392f;--cream:#f8f6ef;--brass:#a88655}
+select:not([multiple]){appearance:none;background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%)!important;background-size:5px 5px,5px 5px!important;background-position:right 13px center,right 8px center!important;background-repeat:no-repeat!important;padding-inline-end:26px!important;border-radius:9px;cursor:pointer}
+[dir=rtl] select:not([multiple]){background-position:left 8px center,left 13px center!important}
+#chooseLocale,.localeGate button{font:inherit;color:var(--ink);background:#f7f7ef;border:1px solid #c8cfc2;border-radius:10px;cursor:pointer}
+#chooseLocale{font-size:14px;padding:7px 12px}.localeGate{color:var(--ink);background:var(--cream);border:1px solid #d1d2bf;border-radius:22px;width:min(420px,92vw);max-height:90dvh;box-shadow:0 20px 80px #16271f40;padding:26px}.localeGate::backdrop{background:#15291fe6;backdrop-filter:blur(9px)}.localeGate small{color:#536459;font:600 12px system-ui;letter-spacing:.12em}.localeGate h2{color:var(--ink);font:600 29px/1.3 Georgia,serif;margin:10px 0 20px}.localeGate div{display:grid;grid-template-columns:1fr 1fr;gap:8px}.localeGate button{min-height:48px;width:100%;text-align:start;padding:8px 10px}.localeGate button:hover,.localeGate button:focus-visible{background:#dce7d5;outline:2px solid #697b62}
+#panel{background:#f5f3eb;color:#24392e;border-color:#b4b9a9;color-scheme:light}
+#panel .banner{background:#273d33;border-color:#b59a6e}#panel .sheet{gap:12px}#panel .sheet fieldset,#panel .equipment,#panel .skillcard{background:#fcfbf6;border:1px solid #d6d8c9;border-radius:13px}
+#panel legend,#panel h3,#panel summary b,#panel .item,#panel fieldset label{color:#2d4538}
+#panel .sheet small,#panel .sheet p,#panel summary span{color:#54645a}
+#panel .sheet input:not([type=range]),#panel .sheet select{background-color:#fffef9;color:#293c31;border-color:#bdc6b8}
+#panel .levelbar button,#panel .tiers button,#panel .item{background:#eeeee4;color:#304638;border:1px solid #cbd0c1}
+#panel .item{border-bottom:3px solid var(--rim)}#panel .item[aria-pressed=true],#panel .tiers [aria-pressed=true]{outline:2px solid #7b8f75;background:#dee8da}
+#panel .editnav{display:flex;gap:4px;background:#e4e7da;padding:4px;border-radius:12px}#panel .editnav button{flex:1;border:0;background:transparent;color:#4c6150}#panel .editnav [aria-pressed=true]{background:#fffdf6;color:#243d2b;box-shadow:0 1px 5px #26352520}
+#panel .forge{color:#f6f3e7}#panel .forge small,#panel .forge p{color:#d9ded5}#panel .forge summary{color:#f7f4df}
+#panel{width:min(490px,96vw);max-height:96dvh}
+#panel .banner{padding:8px 42px 8px 12px;gap:8px;min-height:48px}
+#panel .portrait{width:34px;height:38px;border-width:1px;border-radius:6px}
+#panel .banner h2{font-size:19px;flex:1;line-height:1.1}
+#panel .banner label{color:#fff;white-space:nowrap;font-size:13px;margin:0}
+#panel .banner input{width:52px;min-height:34px;padding:3px;background:#fff;color:#23352c}
+#panel .sheet{padding:10px;gap:6px}
+#panel .quickSlots,#panel .quickStats{display:grid;grid-template-columns:1fr 1fr;gap:5px}
+#panel .quickSlots select,#panel .skillLine select{background-color:#fff;color:#21392e;min-height:36px}
+#panel .skillLine{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:8px;border-bottom:1px solid #d6d9cf;padding:5px 2px}
+#panel .skillLine small{display:block;line-height:1.3;font-size:13px}
+#panel .skillLine select{width:78px;padding:4px}#panel .forge{margin:0;padding:8px}
+#panel .forgeHead{margin:4px 0}#panel .forgeHead strong{font-size:18px}
+#panel .quickStats{border-top:1px solid #465652;margin-top:5px;padding-top:5px}
+#panel .quickStats>small,#panel .quickStats>p{grid-column:1/-1;margin:0;font-size:12px;line-height:1.25;color:#eef2ea}
+#panel .quickStats label{display:flex;align-items:center;justify-content:space-between;margin:0;font-size:12px;gap:3px}
+#panel .quickStats input{width:51%;min-height:32px;padding:2px}
+@media(max-height:490px) and (min-width:560px){#panel{width:min(760px,98vw)}#panel .sheet:has(.forge){grid-template-columns:32% 1fr}#panel .sheet:has(.forge) .forge{grid-column:2;grid-row:1/4}#panel .banner{min-height:38px}#panel .forge button{min-height:30px}#panel .quickSlots{align-self:start}}
